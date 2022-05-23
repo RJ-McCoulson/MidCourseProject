@@ -21,7 +21,7 @@ function closeMenu() {
 
 const toyArray = [
     {
-        id: 1,
+        
         title: "play set",
         catergory: "Chew toys ",
         price: 3.99,
