@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: cursive;
+  background-color:#9692ad
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.header{
+border-bottom: 2px solid #020305;
+background: #475569;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 1.5rem;
+}
+
+.hamburger {
+display: none;
+}
+
+.bar {
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: #101010;
+}
+
+
+
+.section {
+  position: absolute;
+  width: 100%;
+}
+
+.filter-menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.filter-item {
+margin-left: 5rem;
+}
+
+.filter-link{
+font-size: 1.6rem;
+font-weight: 400;
+color: #121c2b;
+}
+
+.filter-link:hover{
+color: #482ff7;
+cursor: pointer;
+}
+
+.site-name {
+font-size: 2.1rem;
+font-weight: 500;
+color: #f0eff5;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container {
+margin: 30px auto;
+max-width: 400px;
+background: white;
+padding: 10px;
+border-radius: 10px;
+box-sizing: border-box;
+box-shadow: 10px 15px rgba(0, 0, 0, 0.1) ;
+font-size: 18px;
+text-align: center;
+
+}
+
+
+
+.photo {
+width: 250px;
+height: 250px;
+
+}
+
+.mailing {
+box-sizing: border-box;
+margin: 30px auto;
+max-width: 400px;
+background-color: #60738d;
+text-align: center;
+align-self: center;
+padding: 30px;
+border-radius: 10px;
+box-shadow:10px 15px rgba(0, 0, 0, 0.1) ;
+}
+
+form input {
+  padding:5px;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#newsletter {
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+.filter-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.filter-menu.active {
+    left: 0;
+}
+
+.filter-item {
+    margin: 2.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+}
+
